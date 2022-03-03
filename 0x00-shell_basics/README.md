@@ -16,6 +16,6 @@ Move the file betty from /tmp/ to /tmp/my_first_directory
 
 Delete the file betty. The file betty is in /tmp/my_fiirst_directory
 
-Note: to create a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0. 0 string SCHOOL school data !:mme School
+Note: to create a magic file school.mgc that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0. 0 string SCHOOL school data !:mime School
 
 on your termnal do file -C -m school.mgc run chmod u+x school.mgc
