@@ -19,4 +19,4 @@ The file hello will be in the working directory
 Example 8: To write a script that adds execution permission to the owner, the group owner and the other users, to the file hello
 
 The file hello will be in the working directory 
-You are not allowed to use commas for this script
+You are not allowed to use commas for this script.
