@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Bash script displays listenting sockets(-l) and PID(-p)
+# script that prints listening ports
 
-sudo netstat -pl
+netstat -l --program
