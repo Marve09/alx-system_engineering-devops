@@ -1,27 +1,36 @@
-## HTTPS SSL
-> HTTPS is a secure version of HTTP, used to encrypt all communication between
-> the client and the website servers. When setting up HTTPS on our website,
-> we should place the certificate on our website web server(s). Resources:
-> [SSL](https://www.sslshopper.com/why-ssl-the-purpose-of-using-ssl-certificates.html),
-> [Step-by-Step Guide I followed to create SSL certificate!](https://www.digitalocean.com/community/tutorials/how-to-secure-haproxy-with-let-s-encrypt-on-ubuntu-14-04),
-> [HTTP to HTTPS](https://www.instantssl.com/ssl-certificate-products/https.html),
-> [sample Bash functions taking parameters](http://tldp.org/LDP/abs/html/complexfunct.html)
+# 0x10. HTTPS SSL
 
-### Description of what each file shows:
-Files that start with:
-1. After updating A records for www (to point to load balancer), lb-01, web-01, and web-02 on [Gandi](https://www.gandi.net/en), running this script shows our subdomain and A records
-2. After following the Step-by-Step Guide on Digital Ocean to install a certificate, this shows the most updated HAproxy config file. HAproxy is listening to port TCP 443 and accepts SSL traffic.
-3. Shows updated HAproxy config file. Redirects HTTP traffic to HTTPS. HAproxy returns a 301 permanent redirect.
-
-### Environment
-* Language: Bash script
-* OS: Ubuntu 14.04 LTS
-* Web Servers: web-01, web-02 Nginx
-* Load Balancer: lb-01, (www) HAproxy; Important folders /etc/letsencrypt/live/www.melissax.online/*
-* Domain Name: from [Gandi](https://www.gandi.net/en)
-* Style guidelines: [Shellscript for Bash](https://github.com/koalaman/shellcheck)
+## Resources:books:
+Read or watch:
+* [What is HTTPS?](https://intranet.hbtn.io/rltoken/pawxG_0c1o86psexBOikIw)
+* [What are the 2 main elements that SSL is providing](https://intranet.hbtn.io/rltoken/jXCB9Hn-ALcP78kPMHtnSA)
+* [HAProxy SSL termination on Ubuntu16.04](https://intranet.hbtn.io/rltoken/UkbvWfKF6ZAY_CUvlM32lA)
+* [SSL termination](https://intranet.hbtn.io/rltoken/VFq2MQ9qHXw2Nb11tnWF6Q)
+* [Bash function](https://intranet.hbtn.io/rltoken/v4PUYiN5CxhYKSycYaVvLw)
 
 ---
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
+## Learning Objectives:bulb:
+What you should learn from this project:
+
+* What is HTTPS SSL 2 main roles
+* What is the purpose encrypting traffic
+* What SSL termination means
+
+---
+
+### [0. HTTPS ABC](./0-https_abc)
+* As for project 0x07, use numbers in your answer file.
+
+
+### [1. World wide web](./1-world_wide_web)
+* Configure your domain zone so that the subdomain www points to your load-balancer IP (lb-01).
+Let’s also add other subdomains to make our life easier, and write a Bash script that will display information about subdomains.
+
+
+### [2. HAproxy SSL termination](./2-haproxy_ssl_termination)
+* “Terminating SSL on HAproxy” means that HAproxy is configured to handle encrypted traffic, unencrypt it and pass it on to its destination.
+
+
+### [3. No loophole in your website traffic](./100-redirect_http_to_https)
+* A good habit is to enforce HTTPS traffic so that no unencrypted traffic is possible. Configure HAproxy to automatically redirect HTTP traffic to HTTPS.
 

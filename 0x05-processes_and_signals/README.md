@@ -1,30 +1,72 @@
-## Processes and Signals
-> Each file in this repository holds code that illustrates an essential concept of 
-> system engineering and devOps pertaining to processes and signals: ```ps```,
-> ```pgrep```, ```kill```, ```pkill```, ```SIGINT``` (Ctrl-C), ```SIGTERM```(```kill```), ```SIGQUIT```(Ctrl-|)
+# 0x05. Processes and signals
 
-### Description of what each file shows:
-* Files that start with:
-0. display bash script's pid
-1. list processes
-2. display pid's related to bash using ```ps```
-3. display pid's related to bash using ```pgrep```
-4. create infinite loop with sleep 2 that Ctrl-C can kill
-5. script to kill file 4 in different terminal
-6. script to pkill file 4 in different terminal
-7. upgrade file 4 to catch Ctrl-C SIGINT and display message instead
-.67 script to kill file 7 in different terminal and gets caught
-8. script to pkill file 7 successfully
-9. 100. infinite loop that can be killed with Ctrl-C
-10. 101. infinite loop with multiple signal catches and ultimately exits
-11. 102. creates 5 zombie processes
-
-### Environment
-* Language: Bash scripts
-* OS: Ubuntu 14.04 LTS
-* Executable: ```chmod +x [filename]```; run with ```./[filename]```
-* Style guidelines: [Shellcheck](https://github.com/koalaman/shellcheck)
+## Resources:books:
+Read or watch:
+* [Linux PID](https://intranet.hbtn.io/rltoken/FcpEdqz8hau7eEB0Pi8Ong)
+* [Linux process](https://intranet.hbtn.io/rltoken/hX_t2YK0erLPbdTq0-uKwQ)
+* [Linux signal](https://intranet.hbtn.io/rltoken/SojW4zvL8j1yaoa7_NM6rA)
 
 ---
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
+## Learning Objectives:bulb:
+What you should learn from this project:
+
+* What is a PID
+* What is a process
+* How to find a process’ PID
+* How to kill a process
+* What is a signal
+* What are the 2 signals that cannot be ignored
+
+---
+
+### [0. What is my PID](./0-what-is-my-pid)
+* Write a Bash script that displays its own PID.
+
+
+### [1. List your processes](./1-list_your_processes)
+* Write a Bash script that displays a list of currently running processes.
+
+
+### [2. Show your Bash PID](./2-show_your_bash_pid)
+* Using your previous exercise command, write a Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
+
+
+### [3. Show your Bash PID made easy](./3-show_your_bash_pid_made_easy)
+* Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
+
+
+### [4. To infinity and beyond](./4-to_infinity_and_beyond)
+* Write a Bash script that displays To infinity and beyond indefinitely.
+
+
+### [5. Kill me now](./5-kill_me_now)
+* We killed our 4-to_infinity_and_beyond process using ctrl+c in the previous task, there is actually another way to do this.
+
+
+### [6. Kill me now made easy](./6-kill_me_now_made_easy)
+* Write a Bash script that kills 4-to_infinity_and_beyond process.
+
+
+### [7. Highlander](./7-highlander)
+* Write a Bash script that displays:
+
+
+### [8. Beheaded process](./8-beheaded_process)
+* Write a Bash script that kills the process 7-highlander.
+
+
+### [9. Process and PID file](./100-process_and_pid_file)
+* Write a Bash script that:
+
+
+### [10. Manage my process](./101-manage_my_process)
+*
+
+
+### [11. Zombie](./102-zombie.c)
+*
+
+
+### [12. Screencast](./103-screencast_unix_signal)
+* Now that you have mastered signals, how about sharing your knowledge?
+

@@ -1,18 +1,52 @@
-## Networking basics #0
-> Basics of networking: [OSI Model](https://searchnetworking.techtarget.com/definition/OSI)
-> , LAN, WLAN, Internet, IP addresses (IPv4, IPv6),
-> TCP/UDP (Transmission Control Protocol, User Diagram Protocol),
-> Ports (SSH: 22, HTTP: 80, HTTPS: 443), ping (protocol used to check if device
-> is connected to network, netstat (display network connections,
-> listening ports)
+# 0x07. Networking basics #0
 
-### Description of what each file shows:
-4. Bash script to display actively listening sockets and their PIDs
-5. Bash script to ping an IP address passed as argument 5 times
+## Resources:books:
+Read or watch:
+* [OSI model](https://intranet.hbtn.io/rltoken/ERGikvYsVP3sa9ZdlAAV4w)
+* [Different types of network](https://intranet.hbtn.io/rltoken/H2peG3mV1MDDEK9c9FpGjA)
+* [LAN network](https://intranet.hbtn.io/rltoken/GLVy5U4Ja4c2BnKYDPwT5Q)
+* [WAN network](https://intranet.hbtn.io/rltoken/IghQOBbQi3Y-H82l3s9ERg)
+* [Internet](https://intranet.hbtn.io/rltoken/osfQ04v-6oWuX4LdcpMYfQ)
+* [MAC address](https://intranet.hbtn.io/rltoken/DjY02-vo10kphmiYSa2Msg)
+* [What is an IP address](https://intranet.hbtn.io/rltoken/_pRm6TVS3zWV_cKg51Gn4Q)
+* [Private and public address](https://intranet.hbtn.io/rltoken/Tj1tSxadTHv8kS9Q7lzTpQ)
+* [IPv4 and IPv6](https://intranet.hbtn.io/rltoken/t9AVXK9jpPJrL5ikz5fvKA)
+* [Localhost](https://intranet.hbtn.io/rltoken/uqDHdS73W-CJQakM8vERtQ)
+* [TCP and UDP](https://intranet.hbtn.io/rltoken/nOeDjXQrw-N8eFmTBiuzqw)
+* [TCP/UDP ports List](https://intranet.hbtn.io/rltoken/gfKJyK0ztzhyNO0SIvVibQ)
+* [What is ping /ICMP](https://intranet.hbtn.io/rltoken/OPrB4crHtTLwUynA5YjVNw)
+* [Positional parameters](https://intranet.hbtn.io/rltoken/yN_ZinFzBaLXuJhOhKiMfw)
 
-### Environment
-* Language: Bash scripts (#4-5)
-* OS: Ubuntu 14.04 LTS
 ---
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
+## Learning Objectives:bulb:
+What you should learn from this project:
+
+* What it is
+* How many layers it has
+* How it is organized
+
+---
+
+### [0. OSI model](./0-OSI_model)
+* OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
+
+
+### [1. Types of network](./1-types_of_network)
+* 
+
+
+### [2. MAC and IP address](./2-MAC_and_IP_address)
+* 
+
+
+### [3. UDP and TCP](./3-UDP_and_TCP)
+* 
+
+
+### [4. TCP and UDP ports](./4-TCP_and_UDP_ports)
+* Once packets have been sent to the right network device using IP using either UDP or TCP as a mode of transportation, it needs to actually enter the network device.
+
+
+### [5. Is the host on the network](./5-is_the_host_on_the_network)
+* 
+

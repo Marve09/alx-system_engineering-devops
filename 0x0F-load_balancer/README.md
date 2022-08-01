@@ -1,24 +1,25 @@
-## Load balancer
-> This project sets up all three servers with Nginx and installs a load balancer.
-> Resources: [Software/Hardware Load Balancers](https://www.thegeekstuff.com/2016/01/load-balancer-intro/),
-> [Load Balancer Algos](https://devcentral.f5.com/articles/intro-to-load-balancing-for-developers-ndash-the-algorithms),
-> [Intro to Load balance concepts](https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts),
-> [HTTP header](https://www.techopedia.com/definition/27178/http-header),
-> [Redundancy](https://en.wikipedia.org/wiki/Redundancy_%28engineering%29),
-> [Webstack Debugging Intranet Page](https://intranet.hbtn.io/concepts/68)
+# 0x0F. Load balancer
 
-### Description of what each file shows:
-Files that start with:
-0. Script configures second web server so it's identical to first web server. Adds to HTTP header too.
-1. Script installs HAproxy on load balancer server; uses roundrobin
+## Resources:books:
+Read or watch:
+* [Introduction to load-balancing and HAproxy](https://intranet.hbtn.io/rltoken/ngIXarEyu8jZwOL3Y30PLQ)
+* [HTTP header](https://intranet.hbtn.io/rltoken/v32JmcDrSiOnFBfqzXvs_Q)
+* [Debian/Ubuntu HAProxy packages](https://intranet.hbtn.io/rltoken/BXGrW_6ocecWaOJb7OK_WA)
 
-### Environment
-* Language: Bash scripts
-* OS: Ubuntu 14.04 LTS
-* Container: Docker
-* Web Servers: Nginx; (338-lb-01: ssh ubuntu@104.196.27.36); (338-web-01: ssh ubuntu@35.229.54.225); (338-web-02: ssh ubuntu@35.231.225.251)
-* Style guidelines: [Shellscript for Bash](https://github.com/koalaman/shellcheck)
 ---
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
+## Learning Objectives:bulb:
+What you should learn from this project:
+
+---
+
+### [0. Double the number of webservers](./0-custom_http_response-header)
+* In this first task you need to configure web-02 to be identical to web-01. Fortunately, you built a Bash script during your web server project, and they’ll now come in handy to easily configure web-02. Remember, always try to automate your work!
+
+
+### [1. Install your load balancer](./1-install_load_balancer)
+* Install and configure HAproxy on your lb-01 server.
+
+
+### [2. Add a custom HTTP header with Puppet](./2-puppet_custom_http_response-header.pp)
+* Just as in task #0, we’d like you to automate the task of creating a custom HTTP header response, but with Puppet.
 
